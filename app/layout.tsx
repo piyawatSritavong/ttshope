@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased m-10 bg-black text-white text-lg`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased m-10 text-lg`}
       >
         <OrderContextProvider>{children}</OrderContextProvider>
       </body>
