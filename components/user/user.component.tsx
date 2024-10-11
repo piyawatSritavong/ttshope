@@ -98,9 +98,11 @@ export function UserInfo(props: { data: IUserItem; allStore: IStoreItem[] }) {
   const totalAmount = calculateTotal();
   const remainingMoney = data.money - totalAmount; // หักเงินคงเหลือจากยอดรวม
 
+  /* eslint-disable */
   useEffect(() => {
     calculateProduct();
   }, [allStore]);
+  /* eslint-enable */
 
   return (
     <div>

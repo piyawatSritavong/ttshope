@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 
 function HomeLayout({ children }: Readonly<{ children: ReactNode }>) {
-  return { children };
+  return <div>{children}</div>;
 }
 
 export default HomeLayout;

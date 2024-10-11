@@ -15,7 +15,9 @@ function HomePage() {
 
   const getProvinceName = (provinceId: string) => {
     const foundProvince = province.find((p) => p.id === provinceId);
-    return foundProvince ? foundProvince.name : "Unknown Province";
+    return foundProvince && foundProvince.name
+      ? foundProvince.name
+      : "Unknown Province";
   };
 
   useEffect(() => {

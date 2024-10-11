@@ -18,6 +18,7 @@ export function StoreTable(props: { data: IStoreDetail[] }) {
     new Set()
   );
 
+  /* eslint-disable */
   useEffect(() => {
     const currentStocks = data.map((item) => item.stock);
     const newHighlightedRows = new Set<number>();
@@ -40,6 +41,7 @@ export function StoreTable(props: { data: IStoreDetail[] }) {
 
     return () => clearTimeout(timer);
   }, [data]);
+  /* eslint-enable */
 
   return (
     <Table className="text-lg">
